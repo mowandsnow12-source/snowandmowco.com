@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mow and Snow</title>
+<style>
+:root{--green:#173d2a;--lime:#a8e063;--cream:#f5f5ed;--dark:#102118}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream);line-height:1.5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 7%;background:white;position:sticky;top:0;z-index:10}
+.logo{font-weight:900;font-size:1.35rem;letter-spacing:-.5px}.logo span{color:#5e9c3c}
+nav a{color:var(--dark);text-decoration:none;margin-left:28px;font-weight:600}
+.hero{min-height:78vh;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(120deg,var(--green),#285c3d);color:white}
+.hero-content{max-width:700px}.tag{display:inline-block;background:rgba(168,224,99,.15);border:1px solid rgba(168,224,99,.35);color:var(--lime);padding:8px 14px;border-radius:99px;font-weight:700;margin-bottom:22px}
+h1{font-size:clamp(3.2rem,8vw,6.5rem);line-height:.92;letter-spacing:-5px;margin-bottom:25px}
+.hero p{font-size:1.2rem;max-width:580px;color:#dbe9df;margin-bottom:34px}
+.btn{display:inline-block;background:var(--lime);color:var(--dark);padding:15px 23px;border-radius:10px;text-decoration:none;font-weight:800;margin-right:10px}
+.btn.alt{background:white}
+section{padding:90px 7%}.section-head{max-width:650px;margin-bottom:45px}
+.section-head h2{font-size:3rem;letter-spacing:-2px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:30px;border-radius:18px;border:1px solid #e1e4dc}
+.icon{font-size:2rem;margin-bottom:18px}.card h3{font-size:1.3rem;margin-bottom:8px}
+.about{background:#e8eee4;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.big-box{background:var(--green);border-radius:25px;min-height:360px;padding:35px;color:white;display:flex;align-items:end}
+.big-box strong{font-size:5rem;line-height:1;color:var(--lime)}
+.cta{background:var(--lime);text-align:center}.cta h2{font-size:3.3rem;letter-spacing:-2px;margin-bottom:12px}
+footer{background:#0d1b13;color:#b9c7bd;padding:30px 7%;display:flex;justify-content:space-between}
+@media(max-width:800px){nav div:last-child{display:none}.grid,.about{grid-template-columns:1fr}h1{letter-spacing:-3px}.section-head h2,.cta h2{font-size:2.4rem}section{padding:65px 6%}.hero{padding:75px 6%}footer{display:block}footer p{margin-top:8px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">Mow and Snow <span>LAWNCARE</span></div>
+  <div><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="tag">PERHAM, MN • LOCAL • RELIABLE</div>
+    <h1>Your lawn.<br><span style="color:#a8e063">Done right.</span></h1>
+    <p>Mow and Snow helps keep your property looking its best with dependable lawn mowing, driveway shoveling, and leaf raking.</p>
+    <a class="btn" href="#contact">Get a Free Quote</a>
+    <a class="btn alt" href="#services">Our Services</a>
+  </div>
+</header>
+
+<section id="services">
+  <div class="section-head"><h2>Simple service. Great results.</h2><p>Reliable outdoor work in Perham and the surrounding area, all year round.</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">🌱</div><h3>Lawn Mowing</h3><p>Keep your lawn looking clean, fresh, and well-maintained with dependable mowing.</p></div>
+    <div class="card"><div class="icon">❄️</div><h3>Driveway Shoveling</h3><p>We clear snow from driveways and help keep your property ready for winter.</p></div>
+    <div class="card"><div class="icon">🍂</div><h3>Leaf Raking</h3><p>We rake and clean up fallen leaves so your yard looks neat and ready for the season.</p></div>
+  </div>
+</section>
+
+
+<section id="pricing">
+  <div class="section-head"><h2>Pricing that fits the job.</h2><p>Every job is different, so our pricing depends on the size and amount of work needed.</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">📏</div><h3>Job Size</h3><p>We look at the size of the property and the amount of work required.</p></div>
+    <div class="card"><div class="icon">💬</div><h3>Custom Quote</h3><p>We'll give you a fair price based on your specific job.</p></div>
+    <div class="card"><div class="icon">✅</div><h3>Free Estimate</h3><p>Reach out to us to get a free quote before we get started.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div>
+    <div class="section-head"><h2>We take pride in the details.</h2><p>Mow and Snow is focused on reliable service, clean work, and making your property something you're proud of.</p></div>
+    <a class="btn" href="#contact">Talk to Us</a>
+  </div>
+  <div class="big-box"><div><strong>100%</strong><br>focused on your lawn.</div></div>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Ready for a better-looking yard?</h2>
+  <p style="margin-bottom:25px">Serving Perham and the surrounding area. Contact us for a free quote.</p>
+  <a class="btn" href="mailto:mow.and.snow12@gmail.com?subject=Quote%20Request%20-%20Mow%20and%20Snow%20Co.">Request a Quote</a>
+</section>
+
+<footer><strong>MOW AND SNOW</strong><p>© 2026 Mow and Snow. All rights reserved.</p></footer>
+</body>
+</html>
